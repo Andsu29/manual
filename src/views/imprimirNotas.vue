@@ -1,15 +1,13 @@
 <template>
-  <div>
+  <div class="vh">
     <section class="modal" v-if="imagemModal" @click="fecharModal">
-      <button @click="imagemModal = false" class="modal_fechar">X</button>
       <div class="modal_container">
-        <div class="modal_img">
-          <img
-            class="imgModal"
-            src="../assets/imagens/segundaparte.png"
-            alt="img_modal"
-          />
-        </div>
+        <button @click="imagemModal = false" class="modal_fechar">X</button>
+        <img
+          class="imgModal"
+          src="../assets/imagens/segundaparte.png"
+          alt="img_modal"
+        />
       </div>
     </section>
     <h1>Imprimir Notas:</h1>
@@ -25,11 +23,12 @@
           selecionar e imprimir uma a uma.
         </h2>
 
-        <div class="teste">
+        <div class="grade2">
           <img
             class="img2"
             src="../assets/imagens/segundaparte.png"
             alt="impress"
+            @click="abrirModal"
           />
           <button class="btn" @click="abrirModal">Ver imagem</button>
         </div>
@@ -94,10 +93,9 @@ h2 {
 }
 .content {
   margin-top: 30px;
-  font-family: "Comfortaa", cursive;
 }
 .items {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .modal::before {
   content: "";
@@ -108,15 +106,15 @@ h2 {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
 }
-.modal_img {
+.modal_container img {
   position: absolute;
   top: 20px;
-  left: 0px;
-  width: 100%;
+  left: 215px;
+  height: 600px;
+  animation: fadeIn 0.4s forwards;
 }
 .modal_container {
   z-index: 999;
-  display: grid;
 }
 .imgModal {
   margin-top: 50px;
@@ -133,7 +131,7 @@ h2 {
   color: white;
   background-color: rgb(240, 53, 53);
 }
-.teste {
+.grade2 {
   display: grid;
   padding: 10px;
 }
@@ -145,5 +143,14 @@ h2 {
   left: 0px;
   width: 100%;
   padding: 80px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 </style>

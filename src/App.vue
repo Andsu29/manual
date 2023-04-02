@@ -4,29 +4,28 @@
     <div class="container">
       <div class="barra-lateral">
         <nav class="navegacao">
-          <router-link to="/">Home</router-link>
           <router-link to="/notas">Primeiros Passos</router-link>
           <router-link to="/produto">Criar Produto</router-link>
           <router-link to="/tamanhos">Tamanho Padrão</router-link>
+          <router-link to="/">Marcas</router-link>
         </nav>
       </div>
-      <div>
-        <router-view />
+      <div class="fonte">
+        <transition mode="out-in">
+          <router-view />
+        </transition>
       </div>
     </div>
-    <footer-view />
   </div>
 </template>
 
 <script>
 import headerView from "@/components/headerView.vue";
-import footerView from "@/components/footerView.vue";
 
 export default {
   name: "app",
   components: {
     headerView,
-    footerView,
   },
 };
 </script>
@@ -35,6 +34,9 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
+}
+.vh {
+  height: 100vh;
 }
 img {
   display: block;
@@ -53,17 +55,21 @@ h1 {
   margin-left: 15px;
   padding: 10px 16px;
 }
+.fonte {
+  font-family: "Comfortaa", cursive;
+}
 .container {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  height: 100vh;
+  display: flex;
+  gap: 30px;
 }
 .barra-lateral {
   background-color: #dfe3e6;
   box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
+  width: 250px;
 }
 .navegacao {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
   padding: 30px;
 }
@@ -77,5 +83,15 @@ h1 {
 }
 .navegacao a.router-link-exact-active {
   color: #84e;
+}
+.v-enter,
+.v-leave-to {
+  transform: translate3d(-20px, 0, 0);
+  opacity: 0;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.3s;
 }
 </style>
