@@ -5,6 +5,9 @@ import imprimirNotas from "../views/imprimirNotas.vue";
 import criarProduto from "../views/criarProduto.vue";
 import subirTamanhos from "../views/subirTamanhos.vue";
 import regrasTitulo from "../views/regrasTitulo.vue";
+import consideraçoesFinais from "../views/consideraçoesFinais.vue";
+import eMillenium from "../views/eMillenium.vue";
+import planilhaPos from "../views/planilhaPos.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +36,21 @@ const routes = [
     path: "/titulos",
     name: "titulos",
     component: regrasTitulo,
+  },
+  {
+    path: "/consideraçoes",
+    name: "consideraçoes",
+    component: consideraçoesFinais,
+  },
+  {
+    path: "/planilha",
+    name: "planilha",
+    component: planilhaPos,
+  },
+  {
+    path: "/millenium",
+    name: "millenium",
+    component: eMillenium,
   },
 ];
 

@@ -9,6 +9,9 @@
           <router-link to="/tamanhos">Tamanho Padrão</router-link>
           <router-link to="/">Marcas</router-link>
           <router-link to="/titulos">Título</router-link>
+          <router-link to="/planilha">Planilha</router-link>
+          <router-link to="/millenium">Millenium</router-link>
+          <router-link to="/consideraçoes">Considerações Finais</router-link>
         </nav>
       </div>
       <div class="fonte">
