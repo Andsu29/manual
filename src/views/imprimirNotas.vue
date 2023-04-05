@@ -73,6 +73,7 @@ img {
 }
 h2 {
   text-align: center;
+  margin-bottom: 16px;
 }
 .btn {
   margin: 5px auto;
@@ -97,6 +98,9 @@ h2 {
 .items {
   margin-bottom: 20px;
 }
+.items h2 {
+  margin-top: 30px;
+}
 .modal::before {
   content: "";
   position: fixed;
@@ -108,17 +112,13 @@ h2 {
 }
 .modal_container img {
   position: absolute;
-  top: 20px;
+  top: 70px;
   left: 215px;
   height: 600px;
   animation: fadeIn 0.4s forwards;
 }
 .modal_container {
   z-index: 999;
-}
-.imgModal {
-  margin-top: 50px;
-  height: 600px;
 }
 .modal_fechar {
   position: absolute;

@@ -8,6 +8,7 @@
           <router-link to="/produto">Criar Produto</router-link>
           <router-link to="/tamanhos">Tamanho Padrão</router-link>
           <router-link to="/">Marcas</router-link>
+          <router-link to="/titulos">Título</router-link>
         </nav>
       </div>
       <div class="fonte">
@@ -44,7 +45,9 @@ img {
 }
 body,
 p,
-a {
+a,
+h1,
+h2 {
   margin: 0px;
 }
 body {

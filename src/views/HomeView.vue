@@ -14,9 +14,6 @@
       <ul>
         <li v-for="lis in lista4" :key="lis">{{ lis }}</li>
       </ul>
-      <ul>
-        <li v-for="lis in lista5" :key="lis">{{ lis }}</li>
-      </ul>
     </div>
   </div>
 </template>
@@ -163,11 +160,11 @@ ul {
   list-style: none;
 }
 .box {
-  width: 1200px;
+  width: 100%;
 }
 .lista {
   display: grid;
-  margin-right: 50px;
+  margin-left: 120px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="vh body">
+  <div class="vh">
     <h1>Criar Produto:</h1>
     <section class="container">
       <div class="conteudo">
@@ -48,11 +48,6 @@ img {
   display: block;
   border-radius: 15px;
 }
-.body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .container {
   display: grid;
   max-width: 100%;
@@ -62,7 +57,8 @@ img {
 .conteudo {
   display: grid;
   text-align: center;
-  padding-top: 5px;
+  padding: 10px;
+  border-radius: 15px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .img4:hover {

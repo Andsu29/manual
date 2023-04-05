@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import imprimirNotas from "../views/imprimirNotas.vue";
 import criarProduto from "../views/criarProduto.vue";
 import subirTamanhos from "../views/subirTamanhos.vue";
+import regrasTitulo from "../views/regrasTitulo.vue";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: "/tamanhos",
     name: "tamanhos",
     component: subirTamanhos,
+  },
+  {
+    path: "/titulos",
+    name: "titulos",
+    component: regrasTitulo,
   },
 ];
 
