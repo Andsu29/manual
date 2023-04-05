@@ -10,7 +10,7 @@
         />
       </div>
     </section>
-    <h1>Imprimir Notas:</h1>
+    <h1>Imprimir Notas</h1>
     <div class="content">
       <div class="items">
         <h2>1) Icone para imprimir as notas.</h2>

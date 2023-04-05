@@ -47,7 +47,9 @@ body,
 p,
 a,
 h1,
-h2 {
+h2,
+ul,
+li {
   margin: 0px;
 }
 body {

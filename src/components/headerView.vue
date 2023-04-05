@@ -8,6 +8,7 @@
 
 <style scoped>
 .nav {
+  margin: 0px;
   display: flex;
   justify-content: start;
   text-align: left;

@@ -1,6 +1,6 @@
 <template>
   <div class="vh">
-    <h1>Criar Produto:</h1>
+    <h1>Criar Produto</h1>
     <section class="container">
       <div class="conteudo">
         <img class="img1" src="../assets/imagens/CodigoProduto.png" alt="" />

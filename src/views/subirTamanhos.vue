@@ -1,6 +1,6 @@
 <template>
   <div class="vh">
-    <h1>Tamanhos Para Subir:</h1>
+    <h1>Tamanhos Para Subir</h1>
     <div class="content">
       <div class="textos">
         <h2 style="color: orange">Bebê</h2>

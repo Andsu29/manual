@@ -1,6 +1,6 @@
 <template>
   <div class="vh">
-    <h1>Marcas Relevantes:</h1>
+    <h1>Marcas Relevantes</h1>
     <div class="box lista">
       <ul>
         <li v-for="list in lista" :key="list">{{ list }}</li>
@@ -158,6 +158,9 @@ export default {
 <style scoped>
 ul {
   list-style: none;
+}
+h1 {
+  margin-bottom: 24px;
 }
 .box {
   width: 100%;
