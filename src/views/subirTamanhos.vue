@@ -1,6 +1,5 @@
 <template>
-  <div class="vh">
-    <h1>Tamanhos Para Subir</h1>
+  <div>
     <div class="content">
       <div class="textos">
         <h2 style="color: orange">Bebê</h2>
@@ -19,7 +18,7 @@
         <p>PLUS MASCULINO - Camiseta G2, Calça 50</p>
         <br />
         <h2 style="color: grey">Calçados</h2>
-        <p>CALÇADOS - Fem 36, Mas 40, BBest 21, Inf 27, Juv 30</p>
+        <p>CALÇADOS - Fem 36, Mas 40, BB 21, Inf 27, Juv 30</p>
       </div>
     </div>
   </div>
@@ -33,7 +32,6 @@ export default {};
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 1215px;
 }
 p {
   margin-top: 15px;

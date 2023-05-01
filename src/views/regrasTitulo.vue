@@ -1,10 +1,11 @@
 <template>
-  <div class="vh">
-    <h1>Regras de Títulos</h1>
+  <div>
     <div class="box">
       <p>
-        Para a otimização dos nomes de produto a sugestão é seguir a seguinte
-        regra:
+        <b
+          >Para a otimização dos nomes de produto a sugestão é seguir a seguinte
+          regra:</b
+        >
       </p>
       <p>
         <span style="color: orange">Tipo de Produto </span> -
@@ -53,10 +54,10 @@
 
       <h2>Exemplo - Beleza</h2>
       <p>
-        <span style="color: orange">Jogo de Lençol</span>
-        <span style="color: purple"> Casal Duplo</span>
-        <span style="color: green">Santista </span>
-        <span style="color: blue">Royal</span>
+        <span style="color: orange">Batom Líquido</span>
+        <span style="color: purple"> Lip Matte</span>
+        <span style="color: green"> Latika</span>
+        <span style="color: blue"> N05</span>
       </p>
     </div>
   </div>
@@ -69,7 +70,6 @@ export default {};
 <style scoped>
 .box {
   text-align: center;
-  margin-left: 200px;
 }
 .box p,
 h2 {

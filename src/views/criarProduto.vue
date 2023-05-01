@@ -1,20 +1,19 @@
 <template>
-  <div class="vh">
-    <h1>Criar Produto</h1>
-    <section class="container">
-      <div class="conteudo">
+  <div>
+    <section class="contain">
+      <div class="caixas">
         <img class="img1" src="../assets/imagens/CodigoProduto.png" alt="" />
         <h2>1) Código do produto</h2>
       </div>
-      <div class="conteudo">
+      <div class="caixas">
         <img class="img1" src="../assets/imagens/cores.png" alt="" />
         <h2>2) Selecionar cores</h2>
       </div>
-      <div class="conteudo">
+      <div class="caixas">
         <img class="img1" src="../assets/imagens/titulo.png" alt="" />
         <h2>3) Título</h2>
       </div>
-      <div class="conteudo">
+      <div class="caixas">
         <img class="img4" src="../assets/imagens/final.png" alt="" />
         <h2>4) Salvar e Finalizar duas vezes</h2>
       </div>
@@ -48,13 +47,13 @@ img {
   display: block;
   border-radius: 15px;
 }
-.container {
+.contain {
   display: grid;
   max-width: 100%;
-  margin-left: 200px;
   grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
-.conteudo {
+.caixas {
   display: grid;
   text-align: center;
   padding: 10px;

@@ -1,6 +1,5 @@
 <template>
-  <div class="vh">
-    <h1>Marcas Relevantes</h1>
+  <div>
     <div class="box lista">
       <ul>
         <li v-for="list in lista" :key="list">{{ list }}</li>
@@ -30,6 +29,7 @@ export default {
         "Andreza Enxovais",
         "Artex",
         "Atlântica",
+        "Australian Gold",
         "Autentique",
         "Azaleia",
         "Bambi",
@@ -53,10 +53,10 @@ export default {
         "Cook's Jeans",
         "Comfortflex",
         "Converse",
-      ],
-      lista2: [
         "Corttex",
         "Crysalis",
+      ],
+      lista2: [
         "Dakota",
         "DelRio",
         "Diadora",
@@ -67,12 +67,16 @@ export default {
         "Dixie",
         "Dôhler",
         "Eagle Rock",
+        "Eco.ar",
         "Econfort",
         "Elétron",
         "Elétron Sport",
         "Endless",
         "Enrico Rossi",
+        "Eudora",
+        "Everlast",
         "Fatal",
+        "Fatal Surf",
         "Federal Art",
         "Ferracini",
         "Fido Dido",
@@ -84,14 +88,15 @@ export default {
         "Gangster",
         "Grendha",
         "Grendene",
+        "Grendene Kids",
       ],
       lista3: [
-        "Grendene Kids",
         "Habana",
         "Hang Loose",
         "Havaianas",
         "HedronsS",
         "Ipanema",
+        "Jequiti",
         "Jolitex",
         "Kappa",
         "Karsten",
@@ -100,16 +105,18 @@ export default {
         "Kolosh",
         "Klin",
         "Lepper",
-        "Lol surprise",
         "Lunender",
         "Lupo",
+        "Mississipi",
+        "Mizuno",
         "Mokkai Jeans",
         "Moleca",
         "Molekinha",
         "Mormaii",
+        "New Balance",
         "Nike",
         "No Stress",
-        "Ocecy",
+        "Occy",
         "Olympikus",
         "Pacific Blue",
         "Pegada",
@@ -119,6 +126,7 @@ export default {
       ],
       lista4: [
         "PimPom",
+        "Pisom",
         "Portallar",
         "Quiz",
         "Rainha",
@@ -127,12 +135,13 @@ export default {
         "Rider",
         "Rock_&_Soda",
         "Rovitex",
+        "Ruby Rose",
         "Sawary",
         "Selene",
         "Santista",
+        "Suzana Santos",
         "Teen",
         "Teka",
-        "Torp",
         "Topper",
         "Trifil",
         "Tryon",
@@ -162,12 +171,8 @@ ul {
 h1 {
   margin-bottom: 24px;
 }
-.box {
-  width: 100%;
-}
 .lista {
   display: grid;
-  margin-left: 120px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 </style>

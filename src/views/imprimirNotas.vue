@@ -1,5 +1,5 @@
 <template>
-  <div class="vh">
+  <div>
     <section class="modal" v-if="imagemModal" @click="fecharModal">
       <div class="modal_container">
         <button @click="imagemModal = false" class="modal_fechar">X</button>
@@ -10,13 +10,12 @@
         />
       </div>
     </section>
-    <h1>Imprimir Notas</h1>
     <div class="content">
       <div class="items">
         <h2>1) Icone para imprimir as notas.</h2>
         <img class="img1" src="../assets/imagens/impress.png" alt="teste" />
       </div>
-      <hr />
+
       <div class="items">
         <h2>
           2) Conferir se caiu todas as Notas (Importante ir atualizando),
@@ -126,7 +125,7 @@ h2 {
   padding: 15px 20px;
   border-radius: 50%;
   border: 2px solid white;
-  right: 205px;
+  right: 160px;
   top: 59px;
   color: white;
   background-color: rgb(240, 53, 53);
@@ -142,7 +141,6 @@ h2 {
   top: 0px;
   left: 0px;
   width: 100%;
-  padding: 80px;
 }
 
 @keyframes fadeIn {

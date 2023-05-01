@@ -2,46 +2,40 @@
   <div id="app">
     <header-view />
     <div class="container">
-      <div class="barra-lateral">
-        <nav class="navegacao">
-          <router-link to="/notas">Primeiros Passos</router-link>
-          <router-link to="/produto">Criar Produto</router-link>
-          <router-link to="/tamanhos">Tamanho Padrão</router-link>
-          <router-link to="/">Marcas</router-link>
-          <router-link to="/titulos">Título</router-link>
-          <router-link to="/planilha">Planilha</router-link>
-          <router-link to="/millenium">Millenium</router-link>
-          <router-link to="/consideraçoes">Considerações Finais</router-link>
-        </nav>
-      </div>
-      <div class="fonte">
+      <nav class="navegacao">
+        <router-link to="/notas">Primeiros Passos</router-link>
+        <router-link to="/produto">Criar Produto</router-link>
+        <router-link to="/tamanhos">Tamanho Padrão</router-link>
+        <router-link to="/">Marcas</router-link>
+        <router-link to="/titulos">Título</router-link>
+        <router-link to="/planilha">Planilha</router-link>
+        <router-link to="/millenium">Millenium</router-link>
+        <router-link to="/consideraçoes">Considerações Finais</router-link>
+      </nav>
+      <div>
         <transition mode="out-in">
-          <router-view />
+          <router-view class="conteudo" />
         </transition>
       </div>
     </div>
+    <footer-view />
   </div>
 </template>
 
 <script>
 import headerView from "@/components/headerView.vue";
+import footerView from "@/components/footerView.vue";
 
 export default {
   name: "app",
   components: {
     headerView,
+    footerView,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-}
-.vh {
-  height: 100vh;
-}
 img {
   display: block;
   max-width: 100%;
@@ -54,43 +48,45 @@ h2,
 ul,
 li {
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-image: url("../src/assets/pattern.svg");
-  height: 100vh;
-}
-h1 {
-  margin-left: 15px;
-  padding: 10px 16px;
-}
-.fonte {
+  max-height: 100vh;
   font-family: "Comfortaa", cursive;
 }
 .container {
-  display: flex;
-  gap: 30px;
-}
-.barra-lateral {
-  background-color: #dfe3e6;
-  box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
-  width: 250px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  flex: 1;
 }
 .navegacao {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 30px;
+  margin-top: 50px;
 }
 .navegacao a {
   text-decoration: none;
   font-weight: bold;
-  color: #2c3e50;
+  color: #f9f9f9;
+  background-color: #84e;
+  padding: 10px 16px;
+  border-radius: 5px;
 }
 .navegacao a:hover {
-  color: rgb(180, 136, 247);
+  background-color: rgb(171, 124, 241);
 }
 .navegacao a.router-link-exact-active {
-  color: #84e;
+  color: rgb(171, 124, 241);
+}
+.conteudo {
+  margin-top: 50px;
+  margin-left: 50px;
 }
 .v-enter,
 .v-leave-to {
