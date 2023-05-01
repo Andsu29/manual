@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Tamanhos</h1>
     <div class="content">
       <div class="textos">
         <h2 style="color: orange">Bebê</h2>

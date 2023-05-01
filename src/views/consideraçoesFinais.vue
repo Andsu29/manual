@@ -1,9 +1,26 @@
 <template>
-  <div class="vh">
+  <div>
     <h1>Considerações Finais</h1>
-    <p>Nunca tenha medo de perguntar.</p>
-    <p>Na dúvida de qualquer cor o melhor e ir olhar.</p>
-    <p>Fazer com pressa aumenta a margem de erro.</p>
+    <br />
+    <br />
+    <p>- Nunca tenha medo de perguntar.</p>
+    <br />
+
+    <p>- Na dúvida de qualquer cor o melhor e ir olhar.</p>
+    <br />
+
+    <p>
+      - Se estiver com pressa dobre a atenção revisando tudo antes de finalizar.
+    </p>
+    <br />
+
+    <p>
+      - Não demorar muito para não atrasar os outros setores e virar uma bola de
+      neve.
+    </p>
+    <br />
+
+    <p>- Importante pedir ajuda se necessário.</p>
   </div>
 </template>
 

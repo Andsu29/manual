@@ -10,8 +10,9 @@
         <router-link to="/titulos">Título</router-link>
         <router-link to="/planilha">Planilha</router-link>
         <router-link to="/millenium">Millenium</router-link>
-        <router-link to="/consideraçoes">Considerações Finais</router-link>
+        <router-link to="/vitrine">Vitrine</router-link>
         <router-link to="/anotacao">Anotações</router-link>
+        <router-link to="/consideracoes">Considerações Finais</router-link>
       </nav>
       <div>
         <transition mode="out-in">
@@ -77,7 +78,7 @@ body {
   color: #f9f9f9;
   background-color: #84e;
   padding: 10px 16px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .navegacao a:hover {
   background-color: rgb(171, 124, 241);
@@ -89,8 +90,7 @@ body {
   color: rgb(171, 124, 241);
 }
 .conteudo {
-  margin-top: 50px;
-  margin-left: 50px;
+  margin: 50px 0px 50px 50px;
 }
 .v-enter,
 .v-leave-to {

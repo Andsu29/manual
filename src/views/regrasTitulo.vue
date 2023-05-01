@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Títulos</h1>
     <div class="box">
       <p>
         <b

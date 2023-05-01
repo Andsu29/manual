@@ -122,13 +122,12 @@ h2 {
 .modal_fechar {
   position: absolute;
   z-index: 9999;
-  padding: 15px 20px;
-  border-radius: 50%;
-  border: 2px solid white;
-  right: 160px;
-  top: 59px;
-  color: white;
-  background-color: rgb(240, 53, 53);
+  border: none;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #f9f9f9;
 }
 .grade2 {
   display: grid;

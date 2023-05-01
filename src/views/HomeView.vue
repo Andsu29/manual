@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="box lista">
+    <h1>Marcas</h1>
+    <div class="lista">
       <ul>
         <li v-for="list in lista" :key="list">{{ list }}</li>
       </ul>

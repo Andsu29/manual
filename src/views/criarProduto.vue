@@ -46,6 +46,7 @@ ul {
 img {
   display: block;
   border-radius: 15px;
+  transition: all 0.3s;
 }
 .contain {
   display: grid;
@@ -57,7 +58,7 @@ img {
   display: grid;
   text-align: center;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 4px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .img4:hover {
