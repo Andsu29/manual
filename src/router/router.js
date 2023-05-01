@@ -8,6 +8,7 @@ import regrasTitulo from "../views/regrasTitulo.vue";
 import consideraçoesFinais from "../views/consideraçoesFinais.vue";
 import eMillenium from "../views/eMillenium.vue";
 import planilhaPos from "../views/planilhaPos.vue";
+import anotacoesView from "../views/anotacoesView.vue";
 
 Vue.use(VueRouter);
 
@@ -51,6 +52,11 @@ const routes = [
     path: "/millenium",
     name: "millenium",
     component: eMillenium,
+  },
+  {
+    path: "/anotacao",
+    name: "anotacao",
+    component: anotacoesView,
   },
 ];
 

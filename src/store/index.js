@@ -1,17 +1,20 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-  },
-  getters: {
+    listaAnotacoes: [],
   },
   mutations: {
+    PREENCHER_LISTA(state, payload) {
+      state.listaAnotacoes.push(payload);
+    },
   },
   actions: {
+    adicionarAnotacao(context, payload) {
+      context.commit("PREENCHER_LISTA", payload);
+    },
   },
-  modules: {
-  }
-})
+});

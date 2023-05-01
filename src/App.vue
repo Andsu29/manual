@@ -11,6 +11,7 @@
         <router-link to="/planilha">Planilha</router-link>
         <router-link to="/millenium">Millenium</router-link>
         <router-link to="/consideraçoes">Considerações Finais</router-link>
+        <router-link to="/anotacao">Anotações</router-link>
       </nav>
       <div>
         <transition mode="out-in">
@@ -80,6 +81,9 @@ body {
 }
 .navegacao a:hover {
   background-color: rgb(171, 124, 241);
+}
+.navegacao a.router-link-exact-active:hover {
+  color: #f9f9f9;
 }
 .navegacao a.router-link-exact-active {
   color: rgb(171, 124, 241);
