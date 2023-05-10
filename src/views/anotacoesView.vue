@@ -65,8 +65,8 @@ export default {
     },
     limparInput() {
       const inputTarefa = document.getElementById("campo");
-      inputTarefa.value = "";
       inputTarefa.focus();
+      this.anotacoes = "";
     },
     adicionar() {
       this.$store.dispatch("adicionarAnotacao", this.anotacoes);
