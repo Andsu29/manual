@@ -1,6 +1,16 @@
 <template>
-  <div id="app">
-    <header-view />
+  <div id="app" :class="{ escuro: modoEscuro }">
+    <header-view>
+      <div>
+        <img
+          title="Modo Noturno"
+          class="lua"
+          @click="modoEscuro = !modoEscuro"
+          src="./assets/moon.svg"
+          alt="lua"
+        />
+      </div>
+    </header-view>
     <div class="container">
       <nav class="navegacao">
         <router-link to="/notas">Primeiros Passos</router-link>
@@ -30,6 +40,11 @@ import footerView from "@/components/footerView.vue";
 
 export default {
   name: "app",
+  data() {
+    return {
+      modoEscuro: false,
+    };
+  },
   components: {
     headerView,
     footerView,
@@ -58,6 +73,18 @@ body {
   max-height: 100vh;
   font-family: "Comfortaa", cursive;
 }
+.lua {
+  height: 25px;
+}
+.lua:hover {
+  transform: scale(1.1);
+}
+.escuro {
+  background-color: rgb(27, 27, 36);
+  background-image: url("../src/assets/pattern2.svg");
+  color: #f9f9f9;
+  transition: all 0.3s;
+}
 .container {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -76,18 +103,18 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: #f9f9f9;
-  background-color: #84e;
+  background-color: rgb(91, 91, 212);
   padding: 10px 16px;
   border-radius: 3px;
 }
 .navegacao a:hover {
-  background-color: rgb(171, 124, 241);
+  background-color: rgb(121, 121, 228);
 }
 .navegacao a.router-link-exact-active:hover {
   color: #f9f9f9;
 }
 .navegacao a.router-link-exact-active {
-  color: rgb(171, 124, 241);
+  color: rgb(99, 129, 211);
 }
 .conteudo {
   margin: 50px 0px 50px 50px;

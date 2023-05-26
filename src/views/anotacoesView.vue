@@ -121,7 +121,7 @@ input:focus {
 .btn {
   font-weight: bold;
   color: #f9f9f9;
-  background-color: rgb(94, 72, 126);
+  background-color: rgb(91, 91, 212);
   padding: 6px 10px;
   border-radius: 5px;
   border: none;
@@ -131,7 +131,7 @@ input:focus {
   right: 100px;
 }
 .btn:hover {
-  background-color: rgb(168, 148, 197);
+  background-color: rgb(121, 121, 228);
 }
 .caixa {
   display: flex;
@@ -144,7 +144,7 @@ li {
   list-style: none;
   font-weight: bold;
   color: #f9f9f9;
-  background-color: rgb(94, 72, 126);
+  background-color: rgb(61, 61, 112);
   padding: 20px 20px;
   border-radius: 3px;
   margin-bottom: 10px;

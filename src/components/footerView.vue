@@ -9,7 +9,7 @@ footer {
   display: flex;
   align-items: center;
   height: 60px;
-  background-color: #84e;
+  background-color: rgb(91, 91, 212);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .logo {

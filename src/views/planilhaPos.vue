@@ -37,8 +37,8 @@
     <br />
     <p>Por enquanto se aplica apenas em Feminino e Masculino.</p>
     <p class="vermelho">
-      Esses códigos do container devem ser atualizados de acordo com as notas
-      recebidas.
+      Os códigos do container devem ser atualizados diariamente para agilizar a
+      subida ao site.
     </p>
     <div class="grade2">
       <img src="../assets/imagens/pos.png" alt="pos" @click="abrirModal" />
@@ -90,13 +90,13 @@ h2 {
   margin: 0 auto;
   margin-top: 25px;
   border: none;
-  background-color: #84e;
+  background-color: rgb(91, 91, 212);
   color: white;
   border-radius: 6px;
   padding: 10px 16px;
 }
 .btn:hover {
-  background-color: rgb(180, 136, 247);
+  background-color: rgb(121, 121, 228);
 }
 .img1 {
   height: 100px;
@@ -113,19 +113,18 @@ h2 {
 .items h2 {
   margin-top: 30px;
 }
-.modal::before {
-  content: "";
+.imgModal {
+  margin-top: 80px;
+}
+.modal {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
 }
 .modal_container img {
-  position: absolute;
-  top: 70px;
-  left: 115px;
   height: 600px;
   animation: fadeIn 0.4s forwards;
 }

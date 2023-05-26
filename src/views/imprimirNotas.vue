@@ -77,13 +77,13 @@ h2 {
 .btn {
   margin: 5px auto;
   border: none;
-  background-color: #84e;
+  background-color: rgb(91, 91, 212);
   color: white;
   border-radius: 6px;
   padding: 10px 16px;
 }
 .btn:hover {
-  background-color: rgb(180, 136, 247);
+  background-color: rgb(121, 121, 228);
 }
 .img1 {
   height: 100px;
@@ -100,20 +100,18 @@ h2 {
 .items h2 {
   margin-top: 30px;
 }
-.modal::before {
-  content: "";
+.modal {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
 }
 .modal_container img {
-  position: absolute;
-  top: 70px;
-  left: 215px;
+  margin-top: 80px;
   height: 600px;
+  width: 1200px;
   animation: fadeIn 0.4s forwards;
 }
 .modal_container {
@@ -130,7 +128,8 @@ h2 {
   color: #f9f9f9;
 }
 .grade2 {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
 }
 .modal {
