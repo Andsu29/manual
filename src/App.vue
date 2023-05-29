@@ -12,18 +12,22 @@
       </div>
     </header-view>
     <div class="container">
-      <nav class="navegacao">
-        <router-link to="/notas">Primeiros Passos</router-link>
-        <router-link to="/produto">Criar Produto</router-link>
-        <router-link to="/tamanhos">Tamanho Padrão</router-link>
-        <router-link to="/">Marcas</router-link>
-        <router-link to="/titulos">Título</router-link>
-        <router-link to="/planilha">Planilha</router-link>
-        <router-link to="/millenium">Millenium</router-link>
-        <router-link to="/vitrine">Vitrine</router-link>
-        <router-link to="/anotacao">Anotações</router-link>
-        <router-link to="/consideracoes">Considerações Finais</router-link>
-      </nav>
+      <div class="fixo">
+        <nav class="navegacao">
+          <router-link to="/notas">Primeiros Passos</router-link>
+          <router-link to="/produto">Criar Produto</router-link>
+          <router-link to="/tamanhos">Tamanho Padrão</router-link>
+          <router-link to="/">Marcas</router-link>
+          <router-link to="/associacao">Associação</router-link>
+          <router-link to="/titulos">Título</router-link>
+          <router-link to="/planilha">Planilha</router-link>
+          <router-link to="/millenium">Millenium</router-link>
+          <router-link to="/vitrine">Vitrine</router-link>
+          <router-link to="/lavagens">Lavagens</router-link>
+          <router-link to="/anotacao">Anotações</router-link>
+          <router-link to="/consideracoes">Considerações Finais</router-link>
+        </nav>
+      </div>
       <div>
         <transition mode="out-in">
           <router-view class="conteudo" />
@@ -53,6 +57,9 @@ export default {
 </script>
 
 <style>
+.fixo {
+  position: fixed;
+}
 img {
   display: block;
   max-width: 100%;
@@ -86,8 +93,7 @@ body {
   transition: all 0.3s;
 }
 .container {
-  display: grid;
-  grid-template-columns: 300px 1fr;
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
@@ -98,6 +104,7 @@ body {
   flex-direction: column;
   gap: 8px;
   margin-top: 50px;
+  width: 300px;
 }
 .navegacao a {
   text-decoration: none;
@@ -117,7 +124,7 @@ body {
   color: rgb(99, 129, 211);
 }
 .conteudo {
-  margin: 50px 0px 50px 50px;
+  margin: 50px 0px 50px 350px;
 }
 .v-enter,
 .v-leave-to {

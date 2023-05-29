@@ -98,6 +98,9 @@ export default {
 </script>
 
 <style scoped>
+main {
+  width: 100%;
+}
 input {
   height: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

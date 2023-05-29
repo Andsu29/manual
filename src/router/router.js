@@ -10,6 +10,8 @@ import eMillenium from "../views/eMillenium.vue";
 import planilhaPos from "../views/planilhaPos.vue";
 import anotacoesView from "../views/anotacoesView.vue";
 import vitrineView from "../views/vitrineView.vue";
+import lavagensView from "../views/lavagensView.vue";
+import associacaoView from "../views/associacaoView.vue";
 
 Vue.use(VueRouter);
 
@@ -63,6 +65,16 @@ const routes = [
     path: "/anotacao",
     name: "anotacao",
     component: anotacoesView,
+  },
+  {
+    path: "/lavagens",
+    name: "lavagens",
+    component: lavagensView,
+  },
+  {
+    path: "/associacao",
+    name: "associacao",
+    component: associacaoView,
   },
 ];
 
