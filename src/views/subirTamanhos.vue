@@ -11,12 +11,12 @@
         <p>Juvenil: 10 ao 16 subir o 10</p>
         <br />
         <h2 style="color: green">Adulto</h2>
-        <p>FEMININO - Blusa M, Calça 38, Sutiã M/44, Calcinha M</p>
+        <p>FEMININO - Blusa M, Calça 38/M, Sutiã M/44, Calcinha M</p>
         <p>MASCULINO - Camiseta M/3, Calça 42, Cueca M</p>
         <br />
         <h2 style="color: blue">Plus Size</h2>
-        <p>PLUS FEMININO - Blusa G1, Calça 48, Sutiã 50, Calcinha 50</p>
-        <p>PLUS MASCULINO - Camiseta G2/6, Calça 50</p>
+        <p>PLUS FEMININO - Blusa G1, Calça 48/G1, Sutiã 50, Calcinha 50</p>
+        <p>PLUS MASCULINO - Camiseta G2/6, Calça 50/G2</p>
         <br />
         <h2 style="color: grey">Calçados</h2>
         <p>CALÇADOS - Fem 36, Mas 40, BB 21, Inf 27, Juv 30</p>
