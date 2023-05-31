@@ -23,19 +23,29 @@
     <br />
     <p>
       Mais abaixo podemos ver os códigos adicionados pelo setor do container,
-      cujo alguns campos estão em branco, no qual os mesmos devem ser
-      atualizados com seus respectivos valores:
+      todos sem datas, cujo os mesmos devem ser atualizados com seus respectivos
+      valores, e as datas de recebimento atualizadas no final da semana.
     </p>
+    <br />
+    <p>Ou seja:</p>
+    <br />
+    <h3>Diariamente</h3>
     <br />
     <ul>
       <li>- Titulo Atualizado</li>
       <li>- Cor do legado (Cor da etiqueta se necessário)</li>
-      <li>- Numero da NF</li>
-      <li>- Data da NF</li>
       <li>- Categoria</li>
     </ul>
     <br />
-    <p>Por enquanto se aplica apenas em Feminino e Masculino.</p>
+    <h3>Fim da semana</h3>
+    <br />
+    <ul>
+      <li>- Data de recebimento (Dados da Millenium)</li>
+    </ul>
+    <br />
+    <p>
+      Por enquanto o padrão container se aplica apenas em Feminino e Masculino.
+    </p>
     <p class="vermelho">
       Os códigos do container devem ser atualizados diariamente para agilizar a
       subida ao site.

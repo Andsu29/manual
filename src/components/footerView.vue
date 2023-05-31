@@ -18,4 +18,9 @@ footer {
   font-weight: bold;
   margin: 0 auto;
 }
+@media (max-width: 1800px) {
+  footer {
+    height: 30px;
+  }
+}
 </style>

@@ -12,6 +12,7 @@ import anotacoesView from "../views/anotacoesView.vue";
 import vitrineView from "../views/vitrineView.vue";
 import lavagensView from "../views/lavagensView.vue";
 import associacaoView from "../views/associacaoView.vue";
+import modelagensView from "../views/modelagensView.vue";
 
 Vue.use(VueRouter);
 
@@ -75,6 +76,11 @@ const routes = [
     path: "/associacao",
     name: "associacao",
     component: associacaoView,
+  },
+  {
+    path: "/modelagens",
+    name: "modelagens",
+    component: modelagensView,
   },
 ];
 

@@ -19,11 +19,12 @@
           <router-link to="/tamanhos">Tamanho Padrão</router-link>
           <router-link to="/">Marcas</router-link>
           <router-link to="/associacao">Associação</router-link>
-          <router-link to="/titulos">Título</router-link>
+          <router-link to="/titulos">Títulos</router-link>
           <router-link to="/planilha">Planilha</router-link>
           <router-link to="/millenium">Millenium</router-link>
           <router-link to="/vitrine">Vitrine</router-link>
           <router-link to="/lavagens">Lavagens</router-link>
+          <router-link to="/modelagens">Modelagens</router-link>
           <router-link to="/anotacao">Anotações</router-link>
           <router-link to="/consideracoes">Considerações Finais</router-link>
         </nav>
@@ -69,6 +70,7 @@ p,
 a,
 h1,
 h2,
+h3,
 ul,
 li {
   margin: 0px;
@@ -135,5 +137,11 @@ body {
 .v-enter-active,
 .v-leave-active {
   transition: all 0.3s;
+}
+
+@media (max-width: 1800px) {
+  .navegacao {
+    margin-top: 10px;
+  }
 }
 </style>
